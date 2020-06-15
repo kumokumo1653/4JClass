@@ -6,7 +6,7 @@ import socket
 # TCP/IP の場合は、SOCK_STREAM を使う
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     # IPアドレスとポートを指定
-    s.bind(('127.0.0.1', 50007))
+    s.bind(('192.168.43.121', 50007))
     # 1 接続
     s.listen(1)
     # connection するまで待つ
